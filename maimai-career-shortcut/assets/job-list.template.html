@@ -5,13 +5,20 @@
 .download-dialog{position:fixed;width:min(400px,calc(100% - 32px));max-height:calc(100dvh - 40px);overflow:auto;border:0;border-radius:20px;padding:30px 28px 26px;background:#fff;color:var(--ink);text-align:center;box-shadow:0 22px 70px rgba(13,31,63,.28)}.download-dialog::backdrop{background:rgba(13,31,63,.58);backdrop-filter:blur(3px)}.download-dialog h2{font-size:23px;line-height:1.4;margin:10px 0 18px}.download-dialog p{font-size:14px;line-height:1.8;margin:0;color:var(--muted)}.download-dialog-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;border-radius:50%;background:#f2f5fa;color:#42546e;font-size:26px;line-height:1;cursor:pointer}.download-qr{display:block;width:min(260px,100%);height:auto;margin:0 auto 18px;object-fit:contain}
 @media(max-width:650px){.wrap{width:calc(100% - 28px)}.topbar{padding:20px 3px}.label{font-size:11px}.hero{padding:27px 23px;border-radius:17px}h1{font-size:27px}.company-card{padding:20px 16px}.company-heading h2{font-size:22px}.lead-grid{grid-template-columns:1fr;gap:14px}.lead-grid>section{padding:20px}.job-heading{display:block}.salary{display:block;margin-top:6px}.job-item{padding:15px}.skills{padding:21px 18px}.brand-footer{padding:25px 23px}.apply-button,.people-search-button{width:100%;text-align:center}.fallback-button{padding:15px 16px;font-size:16px}}
 @media print{body{background:white}.wrap{width:100%}.hero,.lead-grid>section,.brand-footer{print-color-adjust:exact;-webkit-print-color-adjust:exact}.job-item{break-inside:avoid}}
+/* skill-intro:start */
+.brand-footer.skill-intro{display:flex;align-items:center;justify-content:space-between;gap:28px}.skill-intro-copy{flex:1;min-width:0}.brand-footer .skill-intro-lead{font-size:17px;font-weight:700;color:var(--ink);line-height:1.8;margin:0 0 12px}.skill-intro-copy>p:last-child{font-size:14px;line-height:1.9;margin:0}.skill-download-button{flex:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;min-height:46px;padding:11px 22px;border-radius:9px;background:var(--blue);color:#fff;font-size:15px;font-weight:700;text-decoration:none}.skill-download-button:hover{background:#0048d1;text-decoration:none}.skill-download-button:focus-visible{outline:3px solid #8caaff;outline-offset:5px}@media(max-width:650px){.brand-footer.skill-intro{flex-direction:column;align-items:stretch;gap:20px}.skill-download-button{width:100%}.brand-footer .skill-intro-lead{font-size:16px}}
+/* skill-intro:end */
 </style></head><body><main class="wrap">
 <header class="topbar"><span class="brand">脉脉</span><span class="label">白领求职捷径</span></header>
 <section class="hero"><div class="eyebrow">内推 · 公司人脉 · 关联岗位</div><h1>{{TITLE}}</h1></section>
 <p class="context">{{CONTEXT}}</p>
 <section aria-label="公司内推与人脉清单">{{CARDS}}</section>
 <section aria-label="清单末尾的技能关键词">{{SKILLS}}</section>
-<section class="brand-footer"><h2>高效求职在脉脉</h2><p>查看内推原帖、了解公司人脉，在脉脉继续沟通与投递。</p></section>
+<section class="brand-footer skill-intro" aria-label="白领求职捷径skill介绍">
+<div class="skill-intro-copy"><p class="skill-intro-lead">“白领求职捷径skill”是一款面向产研运、市场、财法政等白领求职者的Skill。</p>
+<p>用户安装skill之后，输入目标城市、公司、岗位、或者期望薪资，即可获得一份包含公司内推帖、公司人脉、岗位详情、技能关键词的机会清单。用户可进入脉脉查看原帖、了解员工或直接投递。</p></div>
+<a class="skill-download-button" href="https://github.com/yaoyiyi0828/Hana-AI-1" target="_blank" rel="noopener noreferrer">前往下载skill</a>
+</section>
 <footer class="footer"><p>内推范围与当前意愿以对方确认为准；公司员工身份不代表内推承诺。</p><p>岗位状态与详情以脉脉站内页面为准。</p></footer>
 </main>
 {{DOWNLOAD_DIALOG}}
