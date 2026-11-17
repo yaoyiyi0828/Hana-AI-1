@@ -198,7 +198,7 @@ def render(data):
         '<div class="empty"><p>本次尚未核验到符合条件的内推、人脉或关联岗位。</p>'
         + render_fallback_button() + '</div>'
     )
-    values = dict(TITLE=esc(data.get('title') or '白领求职捷径'), CONTEXT=esc(data.get('context')),
+    values = dict(TITLE=esc(data.get('title') or '内推雷达'), CONTEXT=esc(data.get('context')),
                   CARDS='\n'.join(cards) or empty_state,
                   SKILLS='\n'.join(render_skills(s) for s in skills),
                   DOWNLOAD_DIALOG=render_download_dialog() if needs_download_dialog else '')
