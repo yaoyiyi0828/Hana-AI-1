@@ -1,4 +1,0 @@
-interface:
-  display_name: "内推雷达"
-  short_description: "根据求职目标查找公司内推帖和人脉入口，附带岗位信息与专业技能关键词"
-  default_prompt: "使用「内推雷达」($maimai-career-shortcut)，根据我的求职目标查找公司内推帖和人脉入口，附带关联岗位，优先大厂和明星公司，并在最后展示专业技能关键词。"
